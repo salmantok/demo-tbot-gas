@@ -1,4 +1,5 @@
-import { setupCommands } from './handlers.js';
+import { cmd } from './cmd.js';
+// Tambahkan import fungsi lain di sini
 
 // identifikasi
 const token = '123456789:abcdefghijklmno'; // <- isikan token botmu disini
@@ -8,11 +9,14 @@ function doPost(e) {
   bot.doPost(e);
 }
 
-/*function setWebHook() {
+function setWebHook() {
   let url = 'URL-HASIL-DEPLOY';
   let result = bot.telegram.setWebhook(url);
   console.log(result);
-}*/
+}
 
-setupCommands(bot);
 globalThis.doPost = doPost;
+globalThis.setWebHook = setWebHook;
+
+cmd(bot);
+// Tambahkan pemanggilan fungsi lain di sini

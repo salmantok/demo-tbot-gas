@@ -1,4 +1,4 @@
-export function setupCommands(bot) {
+export function cmd(bot) {
   // handle untuk user yang mengetik /start
   bot.start((ctx) => ctx.reply('Started!'));
 
