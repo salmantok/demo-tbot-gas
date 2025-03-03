@@ -1,13 +1,13 @@
 {
-    "name": "demo-tbot-gas",
-    "version": "0.0.0",
-    "description": "",
-    "main": "index.js",
-    "type": "module",
-    "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "demo-tbot-gas",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "gasc index.js src/Kode.js"
   },
-    "keywords": [],
-    "author": "",
-    "license": "MIT"
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
 }
