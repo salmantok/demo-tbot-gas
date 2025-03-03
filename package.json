@@ -5,9 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "gasc index.js src/Kode.js"
+    "generate:clasp": "node generateClaspConfig.js",
+    "clasp:pull": "clasp pull",
+    "gasc:convert": "gasc ./bot/index.js ./src/Kode.js",
+    "clasp:push": "clasp push && node updateClaspConfig.js && node updateAppScriptConfig.js",
+    "dev": "npm run generate:clasp && npm run clasp:pull && npm run gasc:convert && npm run clasp:push"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^16.4.7"
+  }
 }

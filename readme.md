@@ -1,3 +1,1 @@
-```bash
-npm test
-```
+Untuk menggunakannya, silakan klon repositori ini, lalu buat proyek **GAS**, lalu deploy, lalu salin **URL** hasil deploy, lalu buat **Properti Skrip** di pengaturan, lalu buat kunci `WEBHOOK_URL`, lalu tempel **URL** hasil deploy, lalu buat kunci `BOT_TOKEN`, lalu isi token bot Anda, lalu salin `scriptId` Anda, lalu ubah file **.env-example** menjadi **.env**, lalu tempel `scriptId` Anda ke file **.env**, lalu jalankan npm install, lalu npm run dev. Setelah itu jalankan fungsi setWebHook di browser.

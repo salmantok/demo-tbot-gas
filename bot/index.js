@@ -1,12 +1,4 @@
-'use strict';
-
-function cmd(bot) {
-  bot.start((ctx) =>
-    ctx.reply('Halo, Selamat datang di bot @demo_tbot_gas_bot')
-  );
-
-  // Tambahkan command lain di sini
-}
+import { cmd } from './utils/cmd.js';
 
 // Dapatkan Properti Skrip untuk `bot_token` dan `webhook_url` yang ditentukan di Pengaturan > Properti Skrip
 const userProperties = PropertiesService.getScriptProperties();
@@ -33,9 +25,9 @@ function doPost(e) {
 function setWebHook() {
   try {
     const result = bot.telegram.setWebhook(webhook_url);
-    Logger.log('✅ Webhook berhasil diatur:', result);
+    console.log('✅ Webhook berhasil diatur:', result);
   } catch (error) {
-    Logger.error('❌ Gagal mengatur Webhook:', error);
+    console.error('❌ Gagal mengatur Webhook:', error);
   }
 }
 
@@ -47,6 +39,6 @@ try {
   cmd(bot);
   // Tambahkan panggilan fungsi lainnya di sini.
 } catch (error) {
-  Logger.error('❌ Error pada cmd(bot):', error);
+  console.error('❌ Error pada cmd(bot):', error);
   // Tambahkan penanganan kesalahan untuk fungsi lainnya di sini.
 }

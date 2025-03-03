@@ -1,4 +1,3 @@
 {
-  "scriptId": "",
-  "rootDir": "src"
+  "rootDir": "./src"
 }
