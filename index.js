@@ -1,4 +1,4 @@
-import { cmd } from './cmd.js';
+import { cmd } from './bot/cmd.js';
 // Tambahkan import fungsi lain di sini
 
 // identifikasi
