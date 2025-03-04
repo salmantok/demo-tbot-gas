@@ -3,7 +3,7 @@ import 'dotenv/config';
 
 const claspConfig = {
   scriptId: process.env.SCRIPT_ID,
-  rootDir: 'src',
+  rootDir: 'dist',
 };
 
 await writeFile('.clasp.json', JSON.stringify(claspConfig, null, 2));

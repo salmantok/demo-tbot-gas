@@ -7,7 +7,7 @@
   "scripts": {
     "generate:clasp": "node generateClaspConfig.js",
     "clasp:pull": "clasp pull",
-    "gasc:convert": "gasc ./bot/index.js ./src/Kode.js",
+    "gasc:convert": "gasc ./src/index.js ./dist/Kode.js",
     "clasp:push": "clasp push && node updateClaspConfig.js && node updateAppScriptConfig.js",
     "dev": "npm run generate:clasp && npm run clasp:pull && npm run gasc:convert && npm run clasp:push"
   },

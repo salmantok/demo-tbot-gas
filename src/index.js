@@ -16,7 +16,7 @@ if (!bot_token || !webhook_url) {
   );
 }
 
-const bot = new smn.init(bot_token);
+const bot = new lumpia.init(bot_token);
 
 function doPost(e) {
   bot.doPost(e);

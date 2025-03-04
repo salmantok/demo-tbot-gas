@@ -8,7 +8,7 @@ const appScriptConfig = {
 };
 
 await writeFile(
-  'src/appsscript.json',
+  'dist/appsscript.json',
   JSON.stringify(appScriptConfig, null, 2)
 );
 console.log('✅ appsscript.json updated successfully.');
