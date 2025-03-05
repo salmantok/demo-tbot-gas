@@ -20,6 +20,7 @@ const bot = new lumpia.init(bot_token);
 
 function doPost(e) {
   bot.doPost(e);
+  Keyboard.doPost(e);
 }
 
 function setWebHook() {
@@ -37,8 +38,6 @@ globalThis.setWebHook = setWebHook;
 // Pastikan fungsi yang dipanggil berjalan tanpa kesalahan.
 try {
   cmd(bot);
-  // Tambahkan panggilan fungsi lainnya di sini.
 } catch (error) {
   console.error('❌ Error pada cmd(bot):', error);
-  // Tambahkan penanganan kesalahan untuk fungsi lainnya di sini.
 }
